@@ -9,12 +9,15 @@ public class Main {
 
         //invalid input, so title won't change
         book.setTitle(null); 
+
         book.setAuthor("Douglas Adams");
+
         //invalid input, so price will still be 42
         book.setPrice(-10); 
         System.out.println(book);
 
         book.borrowBook();
+        System.out.println(book);
 
         //You cant sell book because it has been borrowed
         book.sellBook();

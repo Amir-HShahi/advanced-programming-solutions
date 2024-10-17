@@ -35,7 +35,8 @@ public class Book {
     }
 
     /**
-     * Sets isBorrowed property as false if it has not been sold and already borrowed
+     * Sets isBorrowed property as false if it has not been sold and already
+     * borrowed
      * 
      * @return true if returned successfully, false otherwise
      */
@@ -70,10 +71,13 @@ public class Book {
         }
     }
 
-    public String getTitle() {
-        return this.title;
-    }
 
+    /**
+     * Get a String parameter to set as book title.
+     * if parameter is empty or null the value of title remains unchanged
+     * 
+     * @param title String to set as book title
+     */
     public void setTitle(String title) {
         if ((title != null) && (!title.isEmpty())) {
             this.title = title;
@@ -82,10 +86,17 @@ public class Book {
         }
     }
 
-    public String getAuthor() {
-        return this.author;
+    public String getTitle() {
+        return this.title;
     }
 
+
+    /**
+     * Get a String parameter to set as book author name.
+     * if parameter is empty or null the value of author remains unchanged
+     * 
+     * @param author String to set as book author name
+     */
     public void setAuthor(String author) {
         if ((author != null) && (!author.isEmpty())) {
             this.author = author;
@@ -94,10 +105,16 @@ public class Book {
         }
     }
 
-    public double getPrice() {
-        return this.price;
+    public String getAuthor() {
+        return this.author;
     }
 
+    /**
+     * Get a double parameter to set as book price.
+     * if parameter is negative the value of price remains unchanged
+     * 
+     * @param price Double to set as book price
+     */
     public void setPrice(double price) {
         if (price >= 0) {
             this.price = price;
@@ -106,9 +123,12 @@ public class Book {
         }
     }
 
+    public double getPrice() {
+        return this.price;
+    }
 
     public Boolean getIsBorrowed() {
-        return getIsBorrowed();
+        return this.isBorrowed;
     }
 
     public void setIsBorrowed(Boolean isBorrowed) {
@@ -116,12 +136,11 @@ public class Book {
     }
 
     public Boolean getIsSoldOut() {
-        return getIsSoldOut();
+        return this.isSoldOut;
     }
 
     public void setIsSoldOut(Boolean isSoldOut) {
         this.isSoldOut = isSoldOut;
     }
-
 
 }
