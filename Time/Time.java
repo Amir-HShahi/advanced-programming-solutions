@@ -8,6 +8,7 @@ public class Time {
      * if minute or second value have one digit,
      * final result will have a zero behind that value,
      * such as 2 -> 02
+     * 
      * @return formatted time as "00:00:00"
      */
     public String getTime() {
@@ -20,6 +21,7 @@ public class Time {
 
     /**
      * set the second value if the input parameter is positive and less than sixty
+     * 
      * @param second The {@code int} to be set as second
      */
     public void setSecond(int second) {
@@ -38,6 +40,7 @@ public class Time {
 
     /**
      * set minute value if the input parameter is positive and less than sixty
+     * 
      * @param minute The {@code int} to be set as minute
      */
     public void setMinute(int minute) {
@@ -56,6 +59,7 @@ public class Time {
 
     /**
      * set hour value if the input parameter is positive
+     * 
      * @param hour The {@code int} to be set as hour
      */
     public void setHour(int hour) {
@@ -63,7 +67,7 @@ public class Time {
             this.hour = hour;
         } else {
             System.out.println("- Value of the hour can't be negative!\n");
-        } 
+        }
     }
 
 }
