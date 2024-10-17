@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Time moment = new Time();
         //invalid inputs won't set
-        moment.setSecond(12);
+        moment.setSecond(9);
         moment.setMinute(70);
         moment.setHour(-2);
 

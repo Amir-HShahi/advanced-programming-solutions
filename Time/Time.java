@@ -3,8 +3,15 @@ public class Time {
     private int minute = 0;
     private int hour = 0;
 
+    /**
+     * formats time,
+     * if minute or second value have one digit,
+     * final result will have a zero behind that value,
+     * such as 2 -> 02
+     * @return formatted time as "00:00:00"
+     */
     public String getTime() {
-        return getHour() + ":" + getMinute() + ":" + getSecond();
+        return String.format("%d:%02d:%02d", getHour(), getMinute(), getSecond());
     }
 
     public int getSecond() {
