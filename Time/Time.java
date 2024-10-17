@@ -20,7 +20,7 @@ public class Time {
             this.second = second;
         } else if (!(second >= 0)) {
             System.out.println("- Value of the second can't be negative!\n");
-        } else if (!(second >= 60)) {
+        } else if (second >= 60) {
             System.err.println("- Value of the second can't be greater than 60!\n");
         }
     }
