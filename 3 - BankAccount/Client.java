@@ -29,9 +29,8 @@ public class Client {
     }
 
     public void setFirstName(String firstName) {
-        if ((firstName != null) && (!firstName.isBlank())) {
+        if ((firstName != null) && (!firstName.isBlank())) 
             this.firstName = firstName;
-        }
     }
 
     public String getLastName() {
@@ -39,9 +38,8 @@ public class Client {
     }
 
     public void setLastName(String lastName) {
-        if ((lastName != null) && (!lastName.isBlank())) {
+        if ((lastName != null) && (!lastName.isBlank()))
             this.lastName = lastName;
-        }
     }
 
     public String getPhoneNumber() {
@@ -49,8 +47,7 @@ public class Client {
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        if ((phoneNumber != null) && (phoneNumber.length() == 11) && (phoneNumber.startsWith("09"))) {
+        if ((phoneNumber != null) && (phoneNumber.length() == 11) && (phoneNumber.startsWith("09")))
             this.phoneNumber = phoneNumber;
-        }
     }
 }

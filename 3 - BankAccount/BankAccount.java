@@ -38,16 +38,20 @@ public class BankAccount {
     }
 
     public void setNumber(double number) {
-        this.number = number;
+        if (number > 0)
+            this.number = number;
     }
 
     public float getBalance() {
         return this.balance;
     }
 
-    public void setBalance(float balance) {
-        if (balance >= 0) {
+    private void setBalance(float balance) {
+        if (balance >= 0) 
             this.balance = balance;
-        }
+    }
+
+    public String getOwnerName() {
+        return owner.getFirstName() + " " + owner.getLastName();
     }
 }
