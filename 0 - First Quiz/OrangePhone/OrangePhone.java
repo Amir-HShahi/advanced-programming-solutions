@@ -39,7 +39,7 @@ public class OrangePhone {
      * @param name the {@code String} to set as object's name attribute
      */
     public void setName(String name) {
-        if (!name.isEmpty())
+        if ((name != null) && (!name.isEmpty()))
             this.name = name;
         else
             this.name = "jPhone";
@@ -61,7 +61,7 @@ public class OrangePhone {
      * it will be set to the object's imei attribute.
      * 
      * <p>
-     * otherwise 11309 will be set to the object's imei attribute.
+     * otherwise 11309 will be set to the object's imei attribute
      * 
      * @param name the {@code int} to set as object's imei attribute
      */
