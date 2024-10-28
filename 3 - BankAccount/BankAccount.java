@@ -1,15 +1,26 @@
 public class BankAccount {
     private static int idTracker = 0;
     final private int id;
-    private double number;
+
+    private double accountNumber;
+
     private float balance = 0;
+
     private Client owner;
 
-    public BankAccount(double number, Client owner) {
+    public BankAccount(double accountNumber, Client owner) {
         this.id = idTracker++;
-        this.number = number;
-        this.owner = owner;
+        setAccountNumber(accountNumber);
+        setOwner(owner);
         owner.addToOwnerAccounts(this);
+    }
+
+    @Override
+    public String toString() {
+        String ownerName = " - " + getOwnerName() + "\n";
+        String number = "Account number: " + this.accountNumber;
+
+        return ownerName + number;
     }
 
     public Boolean withdraw(float amount) {
@@ -35,12 +46,12 @@ public class BankAccount {
     }
 
     public double getNumber() {
-        return this.number;
+        return this.accountNumber;
     }
 
-    public void setNumber(double number) {
-        if (number > 0)
-            this.number = number;
+    private void setAccountNumber(double accountNumber) {
+        if (accountNumber > 0)
+            this.accountNumber = accountNumber;
     }
 
     public float getBalance() {
@@ -48,8 +59,16 @@ public class BankAccount {
     }
 
     private void setBalance(float balance) {
-        if (balance >= 0) 
+        if (balance >= 0)
             this.balance = balance;
+    }
+
+    public double getAccountNumber() {
+        return this.accountNumber;
+    }
+
+    private void setOwner(Client owner) {
+        this.owner = owner;
     }
 
     public String getOwnerName() {

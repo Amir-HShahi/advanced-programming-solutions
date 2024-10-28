@@ -1,9 +1,9 @@
 public class Client {
     private static int idTracker = 0;
     final private int id;
-    private String firstName;
-    private String lastName;
-    private String phoneNumber;
+
+    private String firstName, lastName, phoneNumber;
+
     private int accountCount = 0;
     private BankAccount[] bankAccounts = new BankAccount[100];
 
@@ -12,6 +12,14 @@ public class Client {
         setFirstName(firstName);
         setLastName(lastName);
         setPhoneNumber(phoneNumber);
+    }
+
+    @Override
+    public String toString() {
+        String name = " - " + this.firstName + " " + this.lastName + "\n";
+        String phoneNumber = "Phone: " + this.phoneNumber;
+
+        return name + phoneNumber;
     }
 
     public void addToOwnerAccounts(BankAccount newAccount) {
@@ -30,7 +38,7 @@ public class Client {
     }
 
     public void setFirstName(String firstName) {
-        if ((firstName != null) && (!firstName.isBlank())) 
+        if ((firstName != null) && (!firstName.isBlank()))
             this.firstName = firstName;
     }
 
