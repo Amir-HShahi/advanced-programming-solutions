@@ -1,11 +1,12 @@
 public class BankAccount {
+    private static int idTracker = 0;
     final private int id;
     private double number;
     private float balance = 0;
     private Client owner;
 
-    public BankAccount(int id, double number, Client owner) {
-        this.id = id;
+    public BankAccount(double number, Client owner) {
+        this.id = idTracker++;
         this.number = number;
         this.owner = owner;
         owner.addToOwnerAccounts(this);

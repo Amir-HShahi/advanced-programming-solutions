@@ -1,4 +1,5 @@
 public class Client {
+    private static int idTracker = 0;
     final private int id;
     private String firstName;
     private String lastName;
@@ -6,8 +7,8 @@ public class Client {
     private int accountCount = 0;
     private BankAccount[] bankAccounts = new BankAccount[100];
 
-    public Client(int id, String firstName, String lastName, String phoneNumber) {
-        this.id = id;
+    public Client(String firstName, String lastName, String phoneNumber) {
+        this.id = idTracker++;
         setFirstName(firstName);
         setLastName(lastName);
         setPhoneNumber(phoneNumber);
