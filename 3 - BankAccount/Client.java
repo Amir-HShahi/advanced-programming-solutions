@@ -8,7 +8,7 @@ public class Client {
     private BankAccount[] bankAccounts = new BankAccount[100];
 
     /**
-     * Assign unique id to the object and set object fields using their setters
+     * Assign unique id to the object and set object attributes using their setters
      * 
      * @param firstName   the {@code String} to set as the firstName attribute
      * @param lastName    the {@code String} to set as the lastName attribute
@@ -43,14 +43,14 @@ public class Client {
     }
 
     /**
-     * @return the unique {@code id} of this {@code Client} object
+     * @return the unique {@code integer} value of {@code id} attribute of this {@code Client} object
      */
     public int getId() {
         return this.id;
     }
 
     /**
-     * @return the {@code firstName} attribute of this {@code Client} object
+     * @return the {@code String} value of {@code firstName} attribute of this {@code Client} object
      */
     public String getFirstName() {
         return this.firstName;
@@ -68,7 +68,7 @@ public class Client {
     }
 
     /**
-     * @return the {@code lastName} attribute of this {@code Client} object
+     * @return the {@code String} value of {@code lastName} attribute of this {@code Client} object
      */
     public String getLastName() {
         return this.lastName;
@@ -86,7 +86,7 @@ public class Client {
     }
 
     /**
-     * @return the {@code phoneNumber} attribute of this {@code Client} object
+     * @return the {@code String} value of {@code phoneNumber} attribute of this {@code Client} object
      */
     public String getPhoneNumber() {
         return this.phoneNumber;
