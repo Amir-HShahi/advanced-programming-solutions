@@ -65,42 +65,63 @@ public class BankAccount {
     }
 
     /**
-     * @return the unique {@code id} of this {@code Client} object
+     * @return the unique {@code integer} value of {@code id} attribute of this
+     *         {@code Client} object
      */
     public int getId() {
         return this.id;
     }
 
     /**
-     * @return the {@code double} value of {@code accountNumber} attribute of this {@code BankAccount} object
+     * @return the {@code double} value of {@code accountNumber} attribute of this
+     *         {@code BankAccount} object
      */
     public double getAccountNumber() {
         return this.accountNumber;
     }
 
+    /**
+     * if the argument value is positive, it will be assigned to
+     * {@code accountNumber}
+     * attribute
+     * 
+     * @param accountNumber the {@code double} value to set to the
+     *                      {@code accountNumber} attribute
+     */
     private void setAccountNumber(double accountNumber) {
         if (accountNumber > 0)
             this.accountNumber = accountNumber;
     }
 
     /**
-     * @return the {@code float} value of {@code balance} attribute of this {@code BankAccount} object
+     * @return the {@code float} value of {@code balance} attribute of this
+     *         {@code BankAccount} object
      */
     public float getBalance() {
         return this.balance;
     }
 
+    /**
+     * if the argument value is positive, it will be assigned to {@code balance}
+     * attribute
+     * 
+     * @param the {@code float} value to set to the
+     *            {@code balance} attribute
+     */
     private void setBalance(float balance) {
         if (balance >= 0)
             this.balance = balance;
     }
 
+    /**
+     * @param owner the {@code Client} object to set to the {@code owner} attribute
+     */
     private void setOwner(Client owner) {
         this.owner = owner;
     }
 
     /**
-     * @return
+     * @return the {@code Client} object of {@code owner} attribute
      */
     public String getOwnerName() {
         return owner.getFirstName() + " " + owner.getLastName();
