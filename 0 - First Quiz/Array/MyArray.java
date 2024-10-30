@@ -2,6 +2,13 @@ public class MyArray {
     private int length = 0;
     private int[] array = new int[0];
 
+    /**
+     * First creates new array to replace with previous array,
+     * Then copies previous array elements to new array,
+     * finally adds the argument element to new array
+     * 
+     * @param element the {@code integer} value to add to array
+     */
     public void add(int element) {
         int[] newArray = new int[length + 1];
         for (int i = 0; i < length; i++) {
@@ -12,6 +19,9 @@ public class MyArray {
         length++;
     }
 
+    /**
+     * @return the {@code integer} value of maximum element of array
+     */
     public int getMaxElement() {
         int max = 0;
         if (length > 0)
@@ -23,6 +33,11 @@ public class MyArray {
         return max;
     }
 
+    /**
+     * reverses array and replaces with previous array
+     * 
+     * @return the {@code int[]} reversed array
+     */
     public int[] reverse() {
         int[] reversedArray = new int[array.length];
         for (int i = 0; i < reversedArray.length; i++) {
@@ -34,6 +49,9 @@ public class MyArray {
 
     @Override
     public String toString() {
+        if (length == 0)
+            return "[]";
+
         String arrayAsString = "[";
         for (int i = 0; i < length; i++) {
             if (i == length - 1) {
