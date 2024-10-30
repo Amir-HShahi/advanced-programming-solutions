@@ -13,7 +13,9 @@ public class MyArray {
     }
 
     public int getMaxElement() {
-        int max = array[0];
+        int max = 0;
+        if (length > 0)
+            max = array[0];
         for (int i = 1; i < array.length; i++)
             if (array[i] > max)
                 max = array[i];
