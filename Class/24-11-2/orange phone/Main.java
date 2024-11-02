@@ -5,14 +5,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < 5; i++) {
-            if (i > 0) {
-                scanner.nextLine();
-            }
             System.out.print("Enter phone " + (i + 1) +  " name : ");
             String name = scanner.nextLine();
 
             System.out.print("Enter phone " + (i + 1) + " imei: ");
             int imei = scanner.nextInt();
+            scanner.nextLine();
 
             OrangePhone phone = new OrangePhone(name, imei);
             System.out.println(phone);
