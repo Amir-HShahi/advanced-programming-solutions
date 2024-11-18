@@ -1,3 +1,3 @@
-# Solution of 
+# 14022 spring midterm solution 
 
-![alt text](14022\midterm\14022mid.jpg)
+![alt text](14022mid.jpg)
