@@ -1,4 +1,4 @@
-# ِDetermine if each statement is true or false
+# Determine if each statement is true or false
 
 ## A
 false
