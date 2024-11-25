@@ -1,5 +1,5 @@
 public class Circle extends Shape {
-    private int radius;
+    private double radius;
 
     public Circle(int radius) {
         this.radius = radius;
@@ -14,5 +14,4 @@ public class Circle extends Shape {
     public double calculatePerimeter() {
         return 2 * 3.14 * radius;
     }
-    
 }
