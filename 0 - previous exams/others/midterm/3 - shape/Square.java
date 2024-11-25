@@ -9,5 +9,4 @@ public class Square extends TwoDimensionalShape {
     public double getArea() {
         return side * side;
     }
-    
 }
