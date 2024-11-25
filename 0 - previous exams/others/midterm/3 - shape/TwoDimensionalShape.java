@@ -1,3 +1,3 @@
-public class TwoDimensionalShape {
-
+public abstract class TwoDimensionalShape extends Shape {
+    
 }
