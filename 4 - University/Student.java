@@ -14,4 +14,13 @@ public class Student extends Person {
     public String getStudentNo() {
         return this.studentNo;
     }
+
+    @Override
+    public String toString() {
+        return "Student:\n" +
+                "ID: " + getID() + "\n" +
+                "Name: " + getFirstName() + " " + getLastName() + "\n" +
+                "Address: " + getAddress() + "\n" +
+                "StudentNo: " + getStudentNo() + "\n";
+    }
 }

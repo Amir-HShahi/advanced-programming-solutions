@@ -58,4 +58,7 @@ public abstract class Person {
     public void setZipCode(int zipCode) {
         this.zipCode = zipCode;
     }
+
+    @Override
+    public abstract String toString();
 }

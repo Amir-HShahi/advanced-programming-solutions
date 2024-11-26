@@ -13,4 +13,15 @@ public class Teacher extends Staff {
     public void setFaculty(String faculty) {
         this.faculty = faculty;
     }
+
+    @Override
+    public String toString() {
+        return "Student:\n" +
+                "ID: " + getID() + "\n" +
+                "Name: " + getFirstName() + " " + getLastName() + "\n" +
+                "Zip code: " + getZipCode() + "\n" +
+                "StaffNo: " + getStaffNo() + "\n" +
+                "Faculty: " + getFaculty() + "\n" +
+                "Salary: " + getSalary();
+    }
 }

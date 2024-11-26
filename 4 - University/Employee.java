@@ -14,4 +14,15 @@ public class Employee extends Staff {
         if (workTime >= 0)
             this.workTime = workTime;
     }
+
+    @Override
+    public String toString() {
+        return "Student:\n" +
+                "ID: " + getID() + "\n" +
+                "Name: " + getFirstName() + " " + getLastName() + "\n" +
+                "Zip code: " + getZipCode() + "\n" +
+                "StaffNo: " + getStaffNo() + "\n" +
+                "Work time: " + getWorkTime() + "\n" +
+                "Salary: " + getSalary();
+    }
 }
