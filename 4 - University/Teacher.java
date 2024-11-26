@@ -16,7 +16,7 @@ public class Teacher extends Staff {
 
     @Override
     public String toString() {
-        return "Student:\n" +
+        return "Teacher:\n" +
                 "ID: " + getID() + "\n" +
                 "Name: " + getFirstName() + " " + getLastName() + "\n" +
                 "Zip code: " + getZipCode() + "\n" +
