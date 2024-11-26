@@ -11,7 +11,7 @@ public class Employee extends Staff {
     }
 
     public void setWorkTime(int workTime) {
-        if (workTime >= 0) 
+        if (workTime >= 0)
             this.workTime = workTime;
     }
 }

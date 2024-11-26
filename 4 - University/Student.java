@@ -5,8 +5,8 @@ public class Student extends Person {
     public Student(String firstName, String lastName, String address) {
         super(firstName, lastName, address);
         this.studentNo = generateStudentNo();
-    } 
-    
+    }
+
     private static String generateStudentNo() {
         return (++studentNoTracker).toString();
     }
