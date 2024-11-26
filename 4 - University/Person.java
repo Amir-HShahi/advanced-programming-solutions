@@ -23,6 +23,10 @@ public abstract class Person {
         return ++idTracker;
     }
 
+    protected int getID() {
+        return this.id;
+    }
+
     public String getFirstName() {
         return this.firstName;
     }
